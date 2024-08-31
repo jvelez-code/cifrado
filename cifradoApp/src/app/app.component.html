@@ -1,0 +1,46 @@
+<div class="card-container">
+<mat-card class="card-1" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title> El cifrado de Vigenère</mat-card-title>
+    <mat-card-subtitle>encriptar</mat-card-subtitle>
+  </mat-card-header>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>CLAVE</mat-label>
+      <input matInput [(ngModel)]="clave">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>MENSAJE</mat-label>
+      <input matInput [(ngModel)]="mensaje">
+    </mat-form-field>
+    <b>{{cifrado}}</b>
+
+
+  <mat-card-actions>
+    <button mat-button (click)="aceptarCi()">ACEPTAR</button>
+  </mat-card-actions>
+</mat-card>
+<br>
+
+
+<mat-card class="card-2"appearance="outlined">
+  <mat-card-header>
+    <mat-card-title> El cifrado de Vigenère</mat-card-title>
+    <mat-card-subtitle>desencriptar</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>CLAVE</mat-label>
+    <input matInput [(ngModel)]="clave">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>CIFRADO</mat-label>
+    <input matInput  [(ngModel)]="cifrado">
+  </mat-form-field>
+  <b>{{descifrado}}</b>
+
+  <mat-card-actions>
+    <button mat-button (click)="aceptarDe()">ACEPTAR</button>
+  </mat-card-actions>
+</mat-card>
+</div>

@@ -1,0 +1,31 @@
+/* Centrando el contenido del contenedor */
+.card-container {
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  /* Estilo para las tarjetas */
+  .mat-card {
+    margin: 10px; /* Espacio entre tarjetas */
+    width: 300%;
+    max-width: 1200px; /* Ancho máximo para las tarjetas */
+  }
+  
+  /* Color específico para cada tarjeta */
+  .card-1 {
+    background-color: #f1f1f1; /* Color de fondo para la primera tarjeta */
+  }
+  
+  .card-2 {
+    background-color: #e0f7fa; /* Color de fondo para la segunda tarjeta */
+  }
+  
+  /* Ajuste de los botones */
+  mat-card-actions button {
+    margin: 10px;
+  }
+  
